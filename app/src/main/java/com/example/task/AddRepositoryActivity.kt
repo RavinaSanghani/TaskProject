@@ -73,7 +73,10 @@ class AddRepositoryActivity : AppCompatActivity(), View.OnClickListener {
 
             val name = response.getString("name")
             val htmlUrl = response.getString("html_url")
-            val description = response.getString("description")
+           var description =""
+            if (response.has("description")){
+                description = response.getString("description")
+            }
 
             CoroutineScope(Dispatchers.Main).launch {
                 viewModelRepository.addRoomDBRepository(
