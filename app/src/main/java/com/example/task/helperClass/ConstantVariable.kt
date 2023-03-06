@@ -9,7 +9,7 @@ class ConstantVariable {
         const val keyAuthorization = "Authorization"
         const val keyGithubVersion = "X-GitHub-Api-Version"
         const val keyAcceptGithub = "application/vnd.github+json"
-        const val keyAuthorizationToken = "Bearer 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"
+        const val keyAuthorizationToken = "Bearer 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"
         const val keyGithubVersionDate = "2022-11-28"
     }
 }
